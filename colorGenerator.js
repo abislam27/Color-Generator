@@ -12,13 +12,7 @@
 
 		document.getElementById("generate").onclick = function()
 		{
-			var colorNum = "#";
-			colorNum += document.getElementById("one").value + 
-						document.getElementById("two").value +
-						document.getElementById("three").value +
-						document.getElementById("four").value +
-						document.getElementById("five").value +
-						document.getElementById("six").value;
+			var colorNum = "#" + document.getElementById("color-num-box").value;
 			document.getElementById("color-num").innerHTML = colorNum;			
 			document.getElementById("color-box").style.backgroundColor = colorNum;
 		}
